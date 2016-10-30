@@ -1,0 +1,57 @@
+body {
+    background: url("../image/bgi4.png") no-repeat;
+    background-size: cover;
+    background-position-y: -2.3rem;
+    background-origin: border-box;
+}
+body #btn {
+    font-size: 0.8333333333333334rem;
+    font-weight: 600;
+    color: #E12F3F;
+    text-align: center;
+    width: 10.277777777777779rem;
+    height: 2.0555555555555554rem;
+    line-height: 2.0555555555555554rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    margin: 0 auto;
+    margin-top: 16.38888888888889rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+body #ul_box {
+    margin-top: 1.6666666666666667rem;
+    padding: 0 2.6666666666666665rem;
+    font-size: 0.7rem;
+}
+body #ul_box h4 {
+    color: #fff;
+    font-size: 0.8rem;
+    padding-top: 0.3611111111111111rem;
+    padding-bottom: 0.9444444444444444rem;
+}
+body #ul_box .ul_content {
+    overflow: hidden;
+    height: 8.055555555555555rem;
+}
+body #ul_box .ul_content #ul_1 {
+    position: relative;
+    color: #F5CFD1;
+}
+body #ul_box .ul_content #ul_1 li {
+    padding: 0.3333333333333333rem 0;
+}
+body #ul_box .ul_content #ul_1 li img {
+    width: 1.3888888888888888rem;
+    height: 1.3888888888888888rem;
+    vertical-align: middle;
+    border-radius: 0.6944444444444444rem;
+}
+body #ul_box .ul_content #ul_1 li .phone {
+    margin-left: 0.3333333333333333rem;
+}
+body #ul_box .ul_content #ul_1 li .time {
+    margin-left: 1.1666666666666667rem;
+}
+body #ul_box .ul_content #ul_1 li .yen {
+    margin-left: 1.9444444444444444rem;
+}

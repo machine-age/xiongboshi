@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>雄博士分享得券</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <!--<script src="./js/less.min.js"></script>-->
+    <script src="./js/scroll.js"></script>
+    <script src="./js/test.js"></script>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=0">
+</head>
+<body>
+ <div id="title" onclick="overlay()">使用规则</div>
+ <div id="modal-overlay">
+     <div class="content">
+         <h3>优惠券使用规则</h3>
+         <ul>
+             <li>1.此优惠券可用于购买课程抵现使用，且不可提现</li>
+             <li>2.此优惠券不可重复领取，仅可使用一次</li>
+             <li>3.时效性：自领取后长期有效，无时间限制</li>
+         </ul>
+         <button onclick="overlay()">我知道了</button>
+     </div>
+ </div>
+ <div id="btn"  onclick="overlay2()">立即注册领取优惠券</div>
+ <div id="modal-overlay2">
+     <div class="content1">
+         <img onclick="overlay2()" src="./image/close.png" alt="">
+         <input name="phone" class="phone" type="number" placeholder="请输入您的手机号">
+         <div class="tips_box">
+             <p class="tips">请输入正确的手机号码</p>
+         </div>
+         <div class="test">
+             <input class="test_num" type="number" placeholder="短信验证码">
+             <div class="send">发送验证码</div>
+         </div>
+         <div class="tips_box2">
+             <p class="tips2">验证码已发送，请注意查收</p>
+         </div>
+         <button id="next">下一步</button>
+     </div>
+     <div class="content2">
+         <img onclick="overlay2()" src="./image/close.png" alt="">
+         <form class="form">
+             <input class="first_p" type="password" placeholder="创建密码">
+             <div class="tips_box">
+                 <p class="tips1">密码长度必须大于6位</p>
+             </div>
+             <input class="second_p" type="password" placeholder="确认密码">
+             <div class="tips_box">
+                 <p class="tips2">两次密码不一致</p>
+             </div>
+             <div id="button1">一键注册领券</div>
+         </form>
+     </div>
+ </div>
+ <script>
+     $(function () {
+         $("#next").on('click', function () {
+             $(".content1").hide().siblings().show()
+         })
+         //密码验证并跳转到领取成功页面
+         $('.first_p').on('blur', function () {
+             var reg = /^[\@A-Za-z0-9\!\#\$\%\^\&\*\.\~]{6,22}$/;
+             if (!reg.test($(this).val())) {
+                 $('.tips1').show()
+             } else {
+                 $('.tips1').hide()
+             }
+         });
+         $('.second_p').on('blur', function () {
+             if ($(this).val() != $('.first_p').val()) {
+                 $('.tips2').show()
+             } else {
+                 $('.tips2').hide()
+             }
+         });
+         $("#button1").on('click', function () {
+             if ($('.tips1,.tips2').is(":visible")) {
+                 return false;
+             } else {
+                 window.location="./download.html"
+             }
+         })
+     })
+ </script>
+
+
+
+ <div id="ul_box">
+     <h4>已领取<span id="num">4</span>张优惠券</h4>
+     <div id="play" class="ul_content">
+         <ul id="ul_1">
+             <li>
+                 <img src="./image/user_pic.png" alt="">
+                 <span class="phone">185****1719</span>
+                 <span class="time">10-11 10:21</span>
+                 <span class="yen">20元</span>
+             </li>
+             <li>
+                 <img src="./image/user_pic.png" alt="">
+                 <span class="phone">185****1718</span>
+                 <span class="time">10-11 10:21</span>
+                 <span class="yen">20元</span>
+             </li>
+             <li>
+                 <img src="./image/user_pic.png" alt="">
+                 <span class="phone">185****1717</span>
+                 <span class="time">10-11 10:21</span>
+                 <span class="yen">20元</span>
+             </li>
+             <li>
+                 <img src="./image/user_pic.png" alt="">
+                 <span class="phone">185****1716</span>
+                 <span class="time">10-11 10:21</span>
+                 <span class="yen">20元</span>
+             </li>
+             <li>
+                 <img src="./image/user_pic.png" alt="">
+                 <span class="phone">185****1716</span>
+                 <span class="time">10-11 10:21</span>
+                 <span class="yen">20元</span>
+             </li>
+         </ul>
+     </div>
+ </div>
+ <script>
+     //文字信息滚动
+     function overlay(){
+         var e1 = document.getElementById('modal-overlay');
+         e1.style.visibility =  (e1.style.visibility == "visible"  ) ? "hidden" : "visible";
+     }
+     function overlay2(){
+         var e2 = document.getElementById('modal-overlay2');
+         e2.style.visibility =  (e2.style.visibility == "visible"  ) ? "hidden" : "visible";
+     }
+
+     function scroll(){
+         $("#play ul").animate({"margin-top":"-40px"},function(){
+             $("#play ul li:eq(0)").appendTo($("#play ul"))
+             $("#play ul").css({"margin-top":0})
+         })
+     }
+     setInterval(scroll,2500)
+ </script>
+</body>
+</html>

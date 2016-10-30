@@ -1,0 +1,128 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #fff;
+    color: #555;
+    font-family: "Microsoft YaHei UI";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+img {
+    border: none;
+}
+ol,
+ul,
+li {
+    list-style: none;
+}
+input,
+textarea,
+select,
+button {
+    font: 14px "Microsoft YaHei UI";
+}
+table {
+    border-collapse: collapse;
+}
+html {
+    overflow-y: scroll;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix {
+    *zoom: 1;
+}
+@media only screen and (width: 320px) {
+    html {
+        font-size: 16px;
+    }
+
+}
+@media only screen and (width: 360px) {
+    html {
+        font-size: 18px;
+    }
+
+}
+@media only screen and (width: 375px) {
+    html {
+        font-size: 18.75px;
+    }
+
+}
+@media only screen and (width: 412px) {
+    html {
+        font-size: 20.6px;
+    }
+
+}
+@media only screen and (width: 414px) {
+    html {
+        font-size: 20.7px;
+    }
+
+}
+@media only screen and (width: 768px) {
+    html {
+        font-size: 38.4px;
+    }
+
+}

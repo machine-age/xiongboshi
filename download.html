@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>雄博士分享得券</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/download.css">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <!--<script src="./js/less.min.js"></script>-->
+    <script src="./js/scroll.js"></script>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=0">
+</head>
+<body>
+
+<div id="btn" onclick="overlay2()">立即下载雄博士</div>
+
+<script>
+    //    androd和ios分别跳转地址
+    $('#btn').on('click', function () {
+        var ua = navigator.userAgent.toLowerCase();
+        if (/iphone|ipad|ipod/.test(ua)) {
+            window.location = "https://www.pgyer.com/xWRK";
+        } else if (/android/.test(ua)) {
+            window.location = "http://a.app.qq.com/o/simple.jsp?pkgname=com.lc.rainbow.edu";
+        }
+    })
+</script>
+
+<div id="ul_box">
+    <h4>已领取<span id="num">4</span>张优惠券</h4>
+    <div id="play" class="ul_content">
+        <ul id="ul_1">
+            <li>
+                <img src="./image/user_pic.png" alt="">
+                <span class="phone">185****1719</span>
+                <span class="time">10-11 10:21</span>
+                <span class="yen">20元</span>
+            </li>
+            <li>
+                <img src="./image/user_pic.png" alt="">
+                <span class="phone">185****1718</span>
+                <span class="time">10-11 10:21</span>
+                <span class="yen">20元</span>
+            </li>
+            <li>
+                <img src="./image/user_pic.png" alt="">
+                <span class="phone">185****1717</span>
+                <span class="time">10-11 10:21</span>
+                <span class="yen">20元</span>
+            </li>
+            <li>
+                <img src="./image/user_pic.png" alt="">
+                <span class="phone">185****1716</span>
+                <span class="time">10-11 10:21</span>
+                <span class="yen">20元</span>
+            </li>
+            <li>
+                <img src="./image/user_pic.png" alt="">
+                <span class="phone">185****1716</span>
+                <span class="time">10-11 10:21</span>
+                <span class="yen">20元</span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    //文字信息滚动
+    function overlay() {
+        var e1 = document.getElementById('modal-overlay');
+        e1.style.visibility = (e1.style.visibility == "visible"  ) ? "hidden" : "visible";
+    }
+    function overlay2() {
+        var e2 = document.getElementById('modal-overlay2');
+        e2.style.visibility = (e2.style.visibility == "visible"  ) ? "hidden" : "visible";
+    }
+    function scroll() {
+        $("#play ul").animate({"margin-top": "-40px"}, function () {
+            $("#play ul li:eq(0)").appendTo($("#play ul"))
+            $("#play ul").css({"margin-top": 0})
+        })
+    }
+    setInterval(scroll, 2500)
+</script>
+</body>
+</html>

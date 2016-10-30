@@ -1,0 +1,289 @@
+body {
+    background: url("../image/bgi.png") no-repeat;
+    background-size: cover;
+    background-position-y: -2.3rem;
+    background-origin: border-box;
+    /* 定义模态对话框外面的覆盖层样式 */
+
+}
+body #title {
+    font-size: 0.7rem;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 2.4444444444444446rem;
+}
+body #btn {
+    font-size: 0.8333333333333334rem;
+    color: #E12F3F;
+    text-align: center;
+    width: 10.277777777777779rem;
+    height: 2.0555555555555554rem;
+    line-height: 2.0555555555555554rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    margin: 0 auto;
+    margin-top: 12.5rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+body #modal-overlay {
+    visibility: hidden;
+    position: absolute;
+    /* 使用绝对定位或固定定位  */
+
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.52);
+    /* 背景半透明 */
+
+    /* 模态框样式 */
+
+}
+body #modal-overlay .content {
+    padding: 0 1.1111111111111112rem;
+}
+body #modal-overlay .content h3 {
+    color: #333;
+    font-size: 0.9rem;
+    padding: 1.9444444444444444rem 0 1.7777777777777777rem 0;
+}
+body #modal-overlay .content ul li {
+    color: #616161;
+    list-style: normal;
+    font-size: 0.8rem;
+    text-align: left;
+    line-height: 1.3rem;
+}
+body #modal-overlay .content button {
+    width: 12.61111111111111rem;
+    height: 2.111111111111111rem;
+    background-color: #FF7D13;
+    border: 0 none;
+    color: #fff;
+    border-radius: 0.3333333333333333rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+body #modal-overlay .content {
+    width: 15rem;
+    height: 16.11111111111111rem;
+    margin: 8.333333333333334rem auto;
+    border-radius: 0.2777777777777778rem;
+    text-align: center;
+    background-color: #fff;
+}
+body #modal-overlay2 {
+    visibility: hidden;
+    position: absolute;
+    /* 使用绝对定位或固定定位  */
+
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.52);
+    /* 背景半透明 */
+
+    /* 模态框样式 */
+
+}
+body #modal-overlay2 .content1 {
+    position: relative;
+}
+body #modal-overlay2 .content1 img {
+    width: 1.1388888888888888rem;
+    height: 1.1388888888888888rem;
+    position: absolute;
+    top: 0.6666666666666666rem;
+    right: 0.6666666666666666rem;
+}
+body #modal-overlay2 .content1 .phone {
+    margin-top: 3.5277777777777777rem;
+}
+body #modal-overlay2 .content1 .test {
+    margin: 0 auto;
+    width: 12.61111111111111rem;
+    height: 2.111111111111111rem;
+    position: relative;
+    left: -0.05555555555555555rem;
+}
+body #modal-overlay2 .content1 .test .send {
+    color: #fff;
+    width: 4.138888888888889rem;
+    height: 2.1666666666666665rem;
+    line-height: 2.1666666666666665rem;
+    background-color: #e9e9e9;
+    position: absolute;
+    right: -0.1111111111111111rem;
+    top: 0.05555555555555555rem;
+    border-radius: 0.2777777777777778rem;
+    font-size: 0.7rem;
+}
+body #modal-overlay2 .content1 .test .adadad {
+    background-color: #adadad;
+}
+body #modal-overlay2 .content1 button {
+    width: 12.61111111111111rem;
+    height: 2.111111111111111rem;
+    background-color: #FF7D13;
+    border: 0 none;
+    color: #fff;
+    border-radius: 0.3333333333333333rem;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+}
+body #modal-overlay2 .content1 input {
+    width: 12.61111111111111rem;
+    height: 2.111111111111111rem;
+    border: 1px solid #E9E9E9;
+    border-radius: 0.3333333333333333rem;
+    outline: none;
+    -webkit-appearance: none;
+    /*去除系统默认的样式*/
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    /* 点击高亮的颜色*/
+
+    color: #676767;
+    font-family: 'Microsoft YaHei UI';
+    font-size: 0.8rem;
+    text-indent: 0.6111111111111112rem;
+}
+body #modal-overlay2 .content1 .tips_box {
+    height: 1.5555555555555556rem;
+}
+body #modal-overlay2 .content1 .tips_box p {
+    line-height: 1.5555555555555556rem;
+    color: red;
+    font-size: 0.7rem;
+    text-align: left;
+    padding-left: 1.7222222222222223rem;
+    display: none;
+}
+body #modal-overlay2 .content1 .tips_box2 {
+    height: 1.5555555555555556rem;
+}
+body #modal-overlay2 .content1 .tips_box2 p {
+    line-height: 1.5555555555555556rem;
+    color: red;
+    font-size: 0.7rem;
+    text-align: left;
+    padding-left: 1.7222222222222223rem;
+    display: none;
+}
+body #modal-overlay2 .content2 {
+    position: relative;
+}
+body #modal-overlay2 .content2 img {
+    width: 1.1388888888888888rem;
+    height: 1.1388888888888888rem;
+    position: absolute;
+    top: 0.6666666666666666rem;
+    right: 0.6666666666666666rem;
+}
+body #modal-overlay2 .content2 form {
+    padding-top: 3.5277777777777777rem;
+}
+body #modal-overlay2 .content2 form .tips_box {
+    height: 1.6666666666666667rem;
+    font-size: 0.6666666666666666rem;
+    color: red;
+}
+body #modal-overlay2 .content2 form .tips_box p {
+    text-align: left;
+    line-height: 1.6666666666666667rem;
+}
+body #modal-overlay2 .content2 form .tips1,
+body #modal-overlay2 .content2 form .tips2 {
+    display: none;
+    text-indent: 2rem;
+}
+body #modal-overlay2 .content2 form #button1 {
+    margin: 0 auto;
+    width: 12.61111111111111rem;
+    height: 2.111111111111111rem;
+    line-height:2.111111111111111rem;
+    background-color: #FF7D13;
+    border: 0 none;
+    color: #fff;
+    border-radius: 0.3333333333333333rem;
+    margin-top: 1.2rem;
+    font-size: 1rem;
+}
+body #modal-overlay2 .content2 form input {
+    width: 12.61111111111111rem;
+    height: 2.111111111111111rem;
+    border: 1px solid #E9E9E9;
+    border-radius: 0.3333333333333333rem;
+    outline: none;
+    -webkit-appearance: none;
+    /*去除系统默认的样式*/
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    /* 点击高亮的颜色*/
+
+    color: #676767;
+    font-family: 'Microsoft YaHei UI';
+    font-size: 0.8rem;
+    text-indent: 0.6111111111111112rem;
+}
+body #modal-overlay2 .content1 {
+    width: 15rem;
+    height: 16.11111111111111rem;
+    margin: 8.333333333333334rem auto;
+    border-radius: 0.2777777777777778rem;
+    text-align: center;
+    background-color: #fff;
+}
+body #modal-overlay2 .content2 {
+    display: none;
+    width: 15rem;
+    height: 16.11111111111111rem;
+    margin: 8.333333333333334rem auto;
+    border-radius: 0.2777777777777778rem;
+    text-align: center;
+    background-color: #fff;
+}
+body #ul_box {
+    margin-top: 1.6666666666666667rem;
+    padding: 0 2rem;
+    font-size: 0.7rem;
+}
+body #ul_box h4 {
+    color: #fff;
+    font-size: 0.8rem;
+    padding-top: 0.3611111111111111rem;
+    padding-bottom: 0.9444444444444444rem;
+}
+body #ul_box .ul_content {
+    overflow: hidden;
+    height: 8.055555555555555rem;
+}
+body #ul_box .ul_content #ul_1 {
+    position: relative;
+    color: #F5CFD1;
+}
+body #ul_box .ul_content #ul_1 li {
+    padding: 0.3333333333333333rem 0;
+}
+body #ul_box .ul_content #ul_1 li img {
+    width: 1.3888888888888888rem;
+    height: 1.3888888888888888rem;
+    vertical-align: middle;
+    border-radius: 0.6944444444444444rem;
+}
+body #ul_box .ul_content #ul_1 li .phone {
+    margin-left: 0.3333333333333333rem;
+}
+body #ul_box .ul_content #ul_1 li .time {
+    margin-left: 1.1666666666666667rem;
+}
+body #ul_box .ul_content #ul_1 li .yen {
+    margin-left: 2.5999999999999996rem;
+}
